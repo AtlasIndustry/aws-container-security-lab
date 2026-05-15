@@ -49,6 +49,13 @@ Current limitations:
 - The container is not yet configured with stronger runtime restrictions.
 - The deployment is manual and not yet managed through infrastructure-as-code.
 
+## Detached Container Execution
+
+After validating the application interactively, the container was restarted in detached mode using:
+
+```bash
+docker run -d --name aws-container-security-lab -p 5000:5000 aws-container-security-lab
+
 ## Next Step
 
 Harden the deployment by improving network exposure, adding CloudWatch logging, and documenting risks before moving toward Terraform-based infrastructure deployment.
